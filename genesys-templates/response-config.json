@@ -1,0 +1,14 @@
+{
+    "translationMap": {
+        "status": "$.status",
+        "callId": "$.callId",
+        "recipient": "$.recipient",
+        "scheduledFor": "$.scheduledFor",
+        "detail": "$.detail"
+    },
+    "translationMapDefaults": {
+        "callId": "\"N/A\"",
+        "scheduledFor": "\"N/A\""
+    },
+    "successTemplate": "{\n  \"status\": ${status},\n  \"callId\": ${callId},\n  \"recipient\": ${recipient},\n  \"scheduledFor\": ${scheduledFor},\n  \"detail\": ${detail}\n}"
+}

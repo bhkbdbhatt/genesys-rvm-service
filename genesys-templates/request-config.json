@@ -1,0 +1,9 @@
+{
+    "requestUrlTemplate": "https://your-service-domain.com/api/v1/voicemail-drop",
+    "requestType": "POST",
+    "headersTemplate": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer ${credentials.customAuthHeader}"
+    },
+    "requestTemplate": "{\n  \"phoneNumber\": \"${input.phoneNumber}\"\n  #if(\"${input.messageText}\" != \"\"), \"messageText\": \"${input.messageText}\"#end\n  #if(\"${input.audioUrl}\" != \"\"), \"audioUrl\": \"${input.audioUrl}\"#end\n  #if(\"${input.timestamp}\" != \"\"), \"timestamp\": \"${input.timestamp}\"#end\n  #if(\"${input.callerId}\" != \"\"), \"callerId\": \"${input.callerId}\"#end\n}"
+}

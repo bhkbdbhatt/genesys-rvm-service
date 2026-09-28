@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "RinglessVoicemailOutput",
+    "type": "object",
+    "properties": {
+        "status": {
+            "type": "string"
+        },
+        "callId": {
+            "type": "string"
+        },
+        "recipient": {
+            "type": "string"
+        },
+        "scheduledFor": {
+            "type": "string"
+        },
+        "detail": {
+            "type": "string"
+        }
+    }
+}
