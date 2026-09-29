@@ -366,8 +366,8 @@ sequenceDiagram
         C-->>G: 400 { reason: INVALID_NUMBER or INVALID_PAYLOAD }
     end
     C->>S: sendRinglessVoicemail({ phoneNumber, messageText, audioUrl, callerId })
-    S->>S: Normalise number<br/>(strip all but digits and +)
-    S->>T: POST https://api.telnyx.com/v2/calls<br/>to: "number;dv=true"
+    S->>S: Normalise number (strip all but digits and +)
+    S->>T: POST https://api.telnyx.com/v2/calls<br/>to number with dv=true
     alt Call accepted
         T-->>S: 200 { data: { call_control_id } }
         S-->>C: { status: SUCCESS, callId, recipient, detail }
