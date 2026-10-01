@@ -679,4 +679,4 @@ validation at boot, make auth fail **closed**, and normalise `recipient` consist
 
 ## License
 
-See the repository for license terms.
+Apache License 2.0 — see [LICENSE](./LICENSE).

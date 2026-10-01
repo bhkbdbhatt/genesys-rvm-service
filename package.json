@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "Ringless Voicemail Drop Microservice for Genesys Cloud Data Actions",
     "main": "src/app.js",
+    "license": "Apache-2.0",
     "scripts": {
         "start": "node src/app.js",
         "dev": "node --watch src/app.js"
