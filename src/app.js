@@ -24,3 +24,8 @@ app.get('/health', (req, res) => res.status(200).send('OK'));
 app.listen(config.port, () => {
     logger.info(`Ringless Voicemail service operational on port ${config.port}`);
 });
+
+const { handleAvayaWebhook } = require('./controllers/avaya.controller');
+
+// Avaya Specific Route Wrapper
+app.post('/api/v1/avaya/voicemail-drop', handleAvayaWebhook);
